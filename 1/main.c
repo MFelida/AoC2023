@@ -24,6 +24,7 @@ int spelled_nbr(char **input)
 	{
 		if (!strncmp(nbr[i], *input, strlen(nbr[i])))
 		{
+			*input += strlen(nbr[i]) - 2;
 			return i + 1;
 		}
 	}
